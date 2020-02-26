@@ -59,7 +59,9 @@
     </Reference>
     <Reference Include="RobotComponentsABB">
       <HintPath>..\DLLs\RobotComponentsABB.dll</HintPath>
-      <Private>False</Private>
+    </Reference>
+    <Reference Include="RobotComponentsGoos">
+      <HintPath>..\DLLs\RobotComponentsGoos.dll</HintPath>
     </Reference>
     <Reference Include="RobotStudio.Services.RobApi">
       <HintPath>..\DLLs\RobotStudio.Services.RobApi.dll</HintPath>
