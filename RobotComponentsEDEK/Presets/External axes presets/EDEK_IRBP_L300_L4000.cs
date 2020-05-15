@@ -51,7 +51,7 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
 
             if (additionalLinkMeshes != null)
             {
-                for (int i = 0; 0 < additionalLinkMeshes.Count; i++)
+                for (int i = 0; i < additionalLinkMeshes.Count; i++)
                 {
                     additionalLinkMesh.Append(additionalLinkMeshes[i]);
                 }
