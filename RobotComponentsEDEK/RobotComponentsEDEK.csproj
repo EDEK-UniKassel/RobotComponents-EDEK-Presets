@@ -80,15 +80,21 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Utils\VersionNumbering.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Components\External Axes presets\EDEK_IRBP_L300_L4000_Component.cs" />
+    <Compile Include="Components\Robot presets\EDEK_IRB4600_40_2_55_Platform_Component.cs" />
+    <Compile Include="Presets\External axes presets\EDEK_IRBP_L300_L4000.cs" />
+    <Compile Include="Presets\Robot presets\EDEK_IRB4600_40_255_Plaform.cs" />
+    <Compile Include="Presets\Robot presets\EDEK_IRB4600_40_255.cs" />
+    <Compile Include="Presets\Robot presets\EDEK_IRB1200_5_090.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Components\Robot presets\IRB1200_5_90_Component.cs" />
-    <Compile Include="Components\Robot presets\IRB4600_40_2_55_Component.cs" />
+    <Compile Include="Utils\VersionNumbering.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Components\Robot presets\EDEK_IRB1200_5_90_Component.cs" />
+    <Compile Include="Components\Robot presets\EDEK_IRB4600_40_2_55_Component.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -97,9 +103,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Components\External axes presets\" />
     <Folder Include="Components\System presets\" />
     <Folder Include="Components\Tool presets\" />
+    <Folder Include="Presets\System presets\" />
+    <Folder Include="Presets\Tool presets\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IRB1200_5_90_Icon.png" />
@@ -148,6 +155,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IRB4600_40_2_55_link_6.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRB4600_40_2_55_platform.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRBP_L300_L4000_link_0.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRBP_L300_L4000_link_1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRBP_L300_L4000_Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
