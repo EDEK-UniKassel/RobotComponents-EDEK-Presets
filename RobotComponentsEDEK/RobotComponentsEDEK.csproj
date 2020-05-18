@@ -80,8 +80,10 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\External Axes presets\EDEK_IGUS_Track_Componenty.cs" />
     <Compile Include="Components\External Axes presets\EDEK_IRBP_L300_L4000_Component.cs" />
     <Compile Include="Components\Robot presets\EDEK_IRB4600_40_2_55_Platform_Component.cs" />
+    <Compile Include="Presets\External axes presets\EDEK_IGUS_Track.cs" />
     <Compile Include="Presets\External axes presets\EDEK_IRBP_L300_L4000.cs" />
     <Compile Include="Presets\Robot presets\EDEK_IRB4600_40_255_Plaform.cs" />
     <Compile Include="Presets\Robot presets\EDEK_IRB4600_40_255.cs" />
@@ -167,6 +169,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IRBP_L300_L4000_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IGUS_track_link_0.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IGUS_track_link_1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IGUS_Track_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUDEL_Track_Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -61,6 +61,44 @@ namespace RobotComponentsEDEK.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GUDEL_Track_Icon {
+            get {
+                object obj = ResourceManager.GetObject("GUDEL_Track_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IGUS_Track_Icon {
+            get {
+                object obj = ResourceManager.GetObject("IGUS_Track_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AAEAAAD/////AQAAAAAAAAAMAgAAAFdSaGlub0NvbW1vbiwgVmVyc2lvbj02LjIzLjIwMDU1LjEzMTExLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTU1MjI4MWU5N2M3NTU1MzAFAQAAABNSaGluby5HZW9tZXRyeS5NZXNoBAAAAAd2ZXJzaW9uCmFyY2hpdmUzZG0Jb3Blbm51cmJzBGRhdGEAAAAHCAgIAgIAAAAQJwAAPAAAAI1zXIwJAwAAAA8DAAAApZINAAL6fwIAmZINAAAAAAD7/wIAFAAAAAAAAADk1NdOR+nTEb/lABCDASLwLbkbXPz/AgBhkg0AAAAAADhyeQAAMHUAANIdM569+OX/0h0znr345f/SHTOevfjl/9IdM569+OX/H/////+PmsAf/////4+aQJqZmZmZqWbAH/////+PmkAAAAAAAAAAAAAAAAAAAAAA+X+xw/Gyt8PAWNvCAgB6Qy7krESSFG9BAACA [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IGUS_track_link_0 {
+            get {
+                return ResourceManager.GetString("IGUS_track_link_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AAEAAAD/////AQAAAAAAAAAMAgAAAFdSaGlub0NvbW1vbiwgVmVyc2lvbj02LjIzLjIwMDU1LjEzMTExLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTU1MjI4MWU5N2M3NTU1MzAFAQAAABNSaGluby5HZW9tZXRyeS5NZXNoBAAAAAd2ZXJzaW9uCmFyY2hpdmUzZG0Jb3Blbm51cmJzBGRhdGEAAAAHCAgIAgIAAAAQJwAAPAAAAI1zXIwJAwAAAA8DAAAAXzUAAAL6fwIAUzUAAAAAAAD7/wIAFAAAAAAAAADk1NdOR+nTEb/lABCDASLwLbkbXPz/AgAbNQAAAAAAADjYAwAANAMAANIdM569+OX/0h0znr345f/SHTOevfjl/9IdM569+OX/5///////ecDn//////95QErvPa2ud/6/5///////eUAAAAAAAAAAAAAAAAAAAAAAAQBQwwEAB8NWAgfCAQBQQwEAB0MAAAAAAACA [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IGUS_track_link_1 {
+            get {
+                return ResourceManager.GetString("IGUS_track_link_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AAEAAAD/////AQAAAAAAAAAMAgAAAFdSaGlub0NvbW1vbiwgVmVyc2lvbj02LjIzLjIwMDU1LjEzMTExLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTU1MjI4MWU5N2M3NTU1MzAFAQAAABNSaGluby5HZW9tZXRyeS5NZXNoBAAAAAd2ZXJzaW9uCmFyY2hpdmUzZG0Jb3Blbm51cmJzBGRhdGEAAAAHCAgIAgIAAAAQJwAAPAAAAI1zXIwJAwAAAA8DAAAAUr8DAAL6fwIARr8DAAAAAAD7/wIAFAAAAAAAAADk1NdOR+nTEb/lABCDASLwLbkbXPz/AgAOvwMAAAAAADhtFgAAiBMAANIdM569+OX/0h0znr345f/SHTOevfjl/9IdM569+OX/6nFtWoc1cMDD6GbjlqOJQObE/wqcaWfAeb94fsXfmkAAAAAAAAAAAAAAAAAAAAAAEdBAw9El7sJdFjq6KiXuQsb670IuAmpDAACA [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string IRB1200_5_0_9_link_0 {
