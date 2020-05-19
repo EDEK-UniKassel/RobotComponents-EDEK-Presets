@@ -71,6 +71,52 @@ namespace RobotComponentsEDEK.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AAEAAAD/////AQAAAAAAAAAMAgAAAFdSaGlub0NvbW1vbiwgVmVyc2lvbj02LjIzLjIwMDU1LjEzMTExLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTU1MjI4MWU5N2M3NTU1MzAFAQAAABNSaGluby5HZW9tZXRyeS5NZXNoBAAAAAd2ZXJzaW9uCmFyY2hpdmUzZG0Jb3Blbm51cmJzBGRhdGEAAAAHCAgIAgIAAAAQJwAAPAAAAI1zXIwJAwAAAA8DAAAA4wFEAAL6fwIA1wFEAAAAAAD7/wIAFAAAAAAAAADk1NdOR+nTEb/lABCDASLwLbkbXPz/AgCfAUQAAAAAADiKggEAgDgBANIdM569+OX/0h0znr345f/SHTOevfjl/9IdM569+OX/AAAAAOCHw8AAAAAA4IfDQAAAAADgh8PAxPUoXM9oxUAAAAAAAAAAAAAAAAAAAAAAAeCwxAFAZ8QBQBDEAYwvRgFAA0RkYSNFAACA [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GUDEL_track_link_0 {
+            get {
+                return ResourceManager.GetString("GUDEL_track_link_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AAEAAAD/////AQAAAAAAAAAMAgAAAFdSaGlub0NvbW1vbiwgVmVyc2lvbj02LjIzLjIwMDU1LjEzMTExLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTU1MjI4MWU5N2M3NTU1MzAFAQAAABNSaGluby5HZW9tZXRyeS5NZXNoBAAAAAd2ZXJzaW9uCmFyY2hpdmUzZG0Jb3Blbm51cmJzBGRhdGEAAAAHCAgIAgIAAAAQJwAAPAAAAI1zXIwJAwAAAA8DAAAA7OYOAAL6fwIA4OYOAAAAAAD7/wIAFAAAAAAAAADk1NdOR+nTEb/lABCDASLwLbkbXPz/AgCo5g4AAAAAADhtYwAAIE4AANIdM569+OX/0h0znr345f/SHTOevfjl/9IdM569+OX/AAAAAAB4icAAAAAAdIYeQQAAAAAAAInAAAAAAHSGHkEAAAAAAAAAAAAAAAAAAAAAlX+qw8M/PMRduSDEIZ8wRAFA7EMzYCVDAACA [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GUDEL_track_link_1 {
+            get {
+                return ResourceManager.GetString("GUDEL_track_link_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IGUS_Pos_Icon {
+            get {
+                object obj = ResourceManager.GetObject("IGUS_Pos_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AAEAAAD/////AQAAAAAAAAAMAgAAAFdSaGlub0NvbW1vbiwgVmVyc2lvbj02LjIzLjIwMDU1LjEzMTExLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTU1MjI4MWU5N2M3NTU1MzAFAQAAABNSaGluby5HZW9tZXRyeS5NZXNoBAAAAAd2ZXJzaW9uCmFyY2hpdmUzZG0Jb3Blbm51cmJzBGRhdGEAAAAHCAgIAgIAAAAQJwAAPAAAAI1zXIwJAwAAAA8DAAAAGwkHAAL6fwIADwkHAAAAAAD7/wIAFAAAAAAAAADk1NdOR+nTEb/lABCDASLwLbkbXPz/AgDXCAcAAAAAADhlLAAAECcAANIdM569+OX/0h0znr345f/SHTOevfjl/9IdM569+OX/7v////8BcMCkRcjVwUaAQJqZmZmZqWbAmpmZmZnxaEAAAAAAAAAAAAAAAAAAAAAAZ4H+wsCf1cOHchLDAYCWQlT+qUJvYK7AAACA [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IGUS_positioner_link_0 {
+            get {
+                return ResourceManager.GetString("IGUS_positioner_link_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AAEAAAD/////AQAAAAAAAAAMAgAAAFdSaGlub0NvbW1vbiwgVmVyc2lvbj02LjIzLjIwMDU1LjEzMTExLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTU1MjI4MWU5N2M3NTU1MzAFAQAAABNSaGluby5HZW9tZXRyeS5NZXNoBAAAAAd2ZXJzaW9uCmFyY2hpdmUzZG0Jb3Blbm51cmJzBGRhdGEAAAAHCAgIAgIAAAAQJwAAPAAAAI1zXIwJAwAAAA8DAAAAtdcCAAL6fwIAqdcCAAAAAAD7/wIAFAAAAAAAAADk1NdOR+nTEb/lABCDASLwLbkbXPz/AgBx1wIAAAAAADiEFAAAiBMAANIdM569+OX/0h0znr345f/SHTOevfjl/9IdM569+OX//v////9/WcDd35N+G/d5QPqjt8z8pU3AEkgXgJQ2VUAAAAAAAAAAAAAAAAAAAAAA74lvwuLyb8LOzBvC74lvQuLyb0JjTn05AACA [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IGUS_positioner_link_1 {
+            get {
+                return ResourceManager.GetString("IGUS_positioner_link_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap IGUS_Track_Icon {

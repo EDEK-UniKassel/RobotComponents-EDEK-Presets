@@ -21,10 +21,15 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
         /// <param name="axisLimit"> The axis limits as a domain. </param>
         /// <param name="additionalLinkMesh"> Additional mesh for link as a single mesh. </param>
         /// <returns> Returns the external rotational axis preset. </returns>
-        public static ExternalRotationalAxis GetExternalRotationalAxis(string name, Plane positionPlane, Interval axisLimit, Mesh additionalLinkMesh = null)
+        public static ExternalRotationalAxis GetExternalRotationalAxis(string name, Plane positionPlane, Interval axisLimit, Mesh additionalBaseMesh = null, Mesh additionalLinkMesh = null)
         {
             List<Mesh> meshes = GetMeshes();
             Plane axisPlane = Plane.WorldXY;
+
+            if (additionalBaseMesh != null)
+            {
+                meshes[0].Append(additionalBaseMesh);
+            }
 
             if (additionalLinkMesh != null)
             {
@@ -44,11 +49,21 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
         /// <param name="name"> The name of the external rotational axis. </param>
         /// <param name="positionPlane"> The position of the axis plane in world coordinate space as plane. </param>
         /// <param name="axisLimit"> The axis limits as a domain. </param>
+        /// <param name="additionalBaseMeshes"> Additional mesh for base as a list with meshes. </param>
         /// <param name="additionalLinkMeshes"> Additional mesh for link as a list with meshes. </param>
         /// <returns> Returns the external rotational axis preset. </returns>
-        public static ExternalRotationalAxis GetExternalRotationalAxis(string name, Plane positionPlane, Interval axisLimit = new Interval(), List<Mesh> additionalLinkMeshes = null)
+        public static ExternalRotationalAxis GetExternalRotationalAxis(string name, Plane positionPlane, Interval axisLimit = new Interval(), List<Mesh> additionalBaseMeshes = null, List < Mesh> additionalLinkMeshes = null)
         {
+            Mesh additionalBaseMesh = new Mesh();
             Mesh additionalLinkMesh = new Mesh();
+
+            if (additionalBaseMeshes != null)
+            {
+                for (int i = 0; i < additionalBaseMeshes.Count; i++)
+                {
+                    additionalBaseMesh.Append(additionalBaseMeshes[i]);
+                }
+            }
 
             if (additionalLinkMeshes != null)
             {
@@ -58,7 +73,7 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
                 }
             }
 
-            ExternalRotationalAxis externalRotationalAxis = GetExternalRotationalAxis(name, positionPlane, axisLimit, additionalLinkMesh);
+            ExternalRotationalAxis externalRotationalAxis = GetExternalRotationalAxis(name, positionPlane, axisLimit, additionalBaseMesh, additionalLinkMesh);
             return externalRotationalAxis;
         }
 
