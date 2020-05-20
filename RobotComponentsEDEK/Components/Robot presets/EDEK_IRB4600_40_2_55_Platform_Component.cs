@@ -49,10 +49,11 @@ namespace RobotComponentsEDEK.Components.Robots
         /// </summary>
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
-            pManager.AddPlaneParameter("Position Plane", "PP", "Position Plane of the Robot as Plane", GH_ParamAccess.item, Plane.WorldXY);
+            pManager.AddPlaneParameter("Position Plane", "PP", "Position Plane of the Robot as Plane", GH_ParamAccess.item);
             pManager.AddParameter(new RobotToolParameter(), "Robot Tool", "RT", "Robot Tool as Robot Tool Parameter", GH_ParamAccess.item);
             pManager.AddParameter(new ExternalAxisParameter(), "External Axis", "EA", "External Axis as External Axis Parameter", GH_ParamAccess.list);
 
+            pManager[0].Optional = true;
             pManager[1].Optional = true;
             pManager[2].Optional = true;
         }
@@ -75,7 +76,7 @@ namespace RobotComponentsEDEK.Components.Robots
             RobotTool tool = null;
             List<ExternalAxis> externalAxis = new List<ExternalAxis>();
 
-            if (!DA.GetData(0, ref positionPlane)) { return; }
+            if (!DA.GetData(0, ref positionPlane)) { positionPlane = new Plane(new Point3d(0, 0, 247), new Vector3d(1, 0, 0), new Vector3d(0, 1, 0)); }
             if (!DA.GetData(1, ref tool)) { tool = new RobotTool(); }
             if (!DA.GetDataList(2, externalAxis)) { externalAxis = new List<ExternalAxis>() { }; }
 

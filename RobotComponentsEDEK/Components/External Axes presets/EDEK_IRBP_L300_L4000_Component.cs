@@ -82,9 +82,9 @@ namespace RobotComponentsEDEK.Components.ExternalAxes
             List<Mesh> additionalBaseMeshes = new List<Mesh>() { };
             List<Mesh> additionalLinkMeshes = new List<Mesh>() { };
 
-            if (!DA.GetData(0, ref name)) { name = "IRBP-L300-L4000"; } //TODO: check name, should be named as defined in controller
+            if (!DA.GetData(0, ref name)) { name = "STN1"; } //TODO: check name, should be named as defined in controller
             if (!DA.GetData(1, ref axisPlane)) { axisPlane = Plane.WorldXY; }
-            if (!DA.GetData(2, ref axisLimit)) { axisLimit = new Interval(-2*40*Math.PI, 2*40*Math.PI); } // TODO: check with controller
+            if (!DA.GetData(2, ref axisLimit)) { axisLimit = new Interval(-2*40*Math.PI*360, 2*40*Math.PI*360); } // TODO: check with controller
             if (!DA.GetDataList(3, additionalBaseMeshes)) { additionalBaseMeshes = new List<Mesh>() { }; }
             if (!DA.GetDataList(4, additionalLinkMeshes)) { additionalLinkMeshes = new List<Mesh>() { }; }
 
