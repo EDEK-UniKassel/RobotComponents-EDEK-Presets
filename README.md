@@ -17,13 +17,13 @@ Wants connected to a virtual or physical controller you can look up the robot an
 
 - External axis positions: Go to the tab `Controller`. Select in the left menu the tab `Configuration`. Go to `Motion`. From the Type list you have to select `Single`. Here you can look up the position data of the external axes. Check [this figure](https://github.com/EDEK-UniKassel/RobotComponents-EDEK-Presets/blob/master/Utility/Figures/Robot_studio_external_axis_position.png) for a visual explanation.
 
-The position and its orientation are given as coordinates (`Base Frame x`, `Base Frame `y and `Base Frame z`) and quaternion values (`Base Frame q1`, `Base Frame q2`, `Base Frame q3`, `Base Frame q4`).  In grasshopper these values can be converted to a plane by using the [Quaternion to Plane](https://edek-unikassel.github.io/RobotComponents-Documentation/docs/Robot%20Components/Categories/Utility/Quaternion%20to%20Plane/) component. A simple example is given below.
+The position and its orientation are given as coordinates (`Base Frame x`, `Base Frame y` and `Base Frame z`) and quaternion values (`Base Frame q1`, `Base Frame q2`, `Base Frame q3`, `Base Frame q4`).  In grasshopper these values can be converted to a plane by using the [Quaternion to Plane](https://edek-unikassel.github.io/RobotComponents-Documentation/docs/Robot%20Components/Categories/Utility/Quaternion%20to%20Plane/) component. A simple example is given below.
 
-<img src="Utility/Figures/Construct_Quaternion_to_Plane.png" width="50%" height="50%" />
+<img src="Utility/Figures/Construct_Quaternion_to_Plane.png" width="368" height="203" />
 
 To check if an already defined robot or external axis is matching the position as defined in the physical or virtual controller the robot or external axis can be deconstructed with one of deconstruct components ([this](https://edek-unikassel.github.io/RobotComponents-Documentation/docs/Robot%20Components/Categories/Deconstruct/Deconstruct%20Robot%20Info/), [this](https://edek-unikassel.github.io/RobotComponents-Documentation/docs/Robot%20Components/Categories/Deconstruct/Deconstruct%20External%20Linear%20Axis/) or [this](https://edek-unikassel.github.io/RobotComponents-Documentation/docs/Robot%20Components/Categories/Deconstruct/Deconstruct%20External%20Rotational%20Axis/) component). The position or axis plane can be converted to quaternion values by using the [Plane to Quaternion](https://edek-unikassel.github.io/RobotComponents-Documentation/docs/Robot%20Components/Categories/Utility/Plane%20to%20Quarternion/) component. Examples are given in the figure below.
 
-<img src="Utility/Figures/Deconstruct_Plane_to_Quaternion.png" width="50%" height="50%" />
+<img src="Utility/Figures/Deconstruct_Plane_to_Quaternion.png" width="722" height="547" />
 
 ## World coordinate space in Brandthaus
 TODO
