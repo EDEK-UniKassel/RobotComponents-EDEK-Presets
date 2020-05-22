@@ -14,6 +14,25 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
     public static class EDEK_IGUS_Track
     {
         /// <summary>
+        /// Defines the IGUS track external linear axis.
+        /// </summary>
+        /// <returns> Returns the external linear axis preset. </returns>
+        public static ExternalLinearAxis GetExternalLinearAxis()
+        {
+            string name = Name;
+            Vector3d axis = Axis;
+            Plane axisPlane = AxisPlane;
+            Interval axisLimit = AxisLimit;
+            List<Mesh> meshes = GetMeshes();
+
+            ExternalLinearAxis externalLinearAxis = new ExternalLinearAxis(name, Plane.WorldXY, axis, axisLimit, meshes[0], meshes[1]);
+            Transform trans = Transform.PlaneToPlane(Plane.WorldXY, axisPlane);
+            externalLinearAxis.Transform(trans);
+
+            return externalLinearAxis;
+        }
+
+        /// <summary>
         /// Defines the IGUS track external linear axis
         /// </summary>
         /// <param name="name"> The name of the external linear axis. </param>
@@ -24,9 +43,8 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
         public static ExternalLinearAxis GetExternalLinearAxis(string name, Plane positionPlane, Vector3d axis, Interval axisLimit)
         {
             List<Mesh> meshes = GetMeshes();
-            Plane axisPlane = Plane.WorldXY;
 
-            ExternalLinearAxis externalLinearAxis = new ExternalLinearAxis(name, axisPlane, axis, axisLimit, meshes[0], meshes[1]);
+            ExternalLinearAxis externalLinearAxis = new ExternalLinearAxis(name, Plane.WorldXY, axis, axisLimit, meshes[0], meshes[1]);
             Transform trans = Transform.PlaneToPlane(Plane.WorldXY, positionPlane);
             externalLinearAxis.Transform(trans);
 
@@ -37,7 +55,7 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
         /// Defines the base and link meshes a robot coordinate space. 
         /// </summary>
         /// <returns> Returns a list with meshes. </returns>
-            public static List<Mesh> GetMeshes()
+        public static List<Mesh> GetMeshes()
         {
             List<Mesh> meshes = new List<Mesh>() { };
             string linkString;
@@ -52,5 +70,36 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
             return meshes;
         }
 
+        /// <summary>
+        /// Predefined name
+        /// </summary>
+        public static string Name
+        {
+            get { return "M7DM1"; }
+        }
+
+        /// <summary>
+        /// Predefined axis direction
+        /// </summary>
+        public static Vector3d Axis
+        {
+            get { return new Vector3d(0, 1, 0); }
+        }
+
+        /// <summary>
+        /// Predefined axis plane
+        /// </summary>
+        public static Plane AxisPlane
+        {
+            get { return new Plane(new Point3d(-350, 125, 109), new Vector3d(0, 0, 1)); }
+        }
+
+        /// <summary>
+        /// Predefined axis limit
+        /// </summary>
+        public static Interval AxisLimit
+        {
+            get { return new Interval(0, 1150); }
+        }
     }
 }

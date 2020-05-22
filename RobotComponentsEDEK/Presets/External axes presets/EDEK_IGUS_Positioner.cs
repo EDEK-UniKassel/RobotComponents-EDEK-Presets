@@ -19,6 +19,7 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
         /// <param name="name"> The name of the external rotational axis. </param>
         /// <param name="positionPlane"> The position of the axis plane in world coordinate space as plane. </param>
         /// <param name="axisLimit"> The axis limits as a domain. </param>
+        /// <param name="additionalBaseMesh"> Additional mesh for base as a single mesh. </param>
         /// <param name="additionalLinkMesh"> Additional mesh for link as a single mesh. </param>
         /// <returns> Returns the external rotational axis preset. </returns>
         public static ExternalRotationalAxis GetExternalRotationalAxis(string name, Plane positionPlane, Interval axisLimit, Mesh additionalBaseMesh = null, Mesh additionalLinkMesh = null)
@@ -97,5 +98,28 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
             return meshes;
         }
 
+        /// <summary>
+        /// Predefined name
+        /// </summary>
+        public static string Name
+        {
+            get { return "M8DM1"; }
+        }
+
+        /// <summary>
+        /// Predefined axis plane
+        /// </summary>
+        public static Plane AxisPlane
+        {
+            get { return Plane.WorldXY; }
+        }
+
+        /// <summary>
+        /// Predefined axis limit
+        /// </summary>
+        public static Interval AxisLimit
+        {
+            get { return new Interval(-1.25664E+09, 1.25664E+09); }
+        }
     }
 }

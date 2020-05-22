@@ -80,7 +80,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\External Axes presets\EDEK_GUDEL_Track_Componenty.cs" />
+    <Compile Include="Components\External Axes presets\EDEK_GUDEL_Track_Component.cs" />
     <Compile Include="Components\External Axes presets\EDEK_IGUS_Track_Component.cs" />
     <Compile Include="Components\External Axes presets\EDEK_IGUS_Positioner_Component.cs" />
     <Compile Include="Components\External Axes presets\EDEK_IRBP_L300_L4000_Component.cs" />

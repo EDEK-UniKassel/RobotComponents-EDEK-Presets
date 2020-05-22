@@ -82,9 +82,9 @@ namespace RobotComponentsEDEK.Components.ExternalAxes
             List<Mesh> additionalBaseMeshes = new List<Mesh>() { };
             List<Mesh> additionalLinkMeshes = new List<Mesh>() { };
 
-            if (!DA.GetData(0, ref name)) { name = "M8DM1"; }
-            if (!DA.GetData(1, ref axisPlane)) { axisPlane = Plane.WorldXY; }
-            if (!DA.GetData(2, ref axisLimit)) { axisLimit = new Interval(-1.25664E+09, 1.25664E+09); }
+            if (!DA.GetData(0, ref name)) { name = EDEK_IGUS_Positioner.Name; }
+            if (!DA.GetData(1, ref axisPlane)) { axisPlane = EDEK_IGUS_Positioner.AxisPlane; }
+            if (!DA.GetData(2, ref axisLimit)) { axisLimit = EDEK_IGUS_Positioner.AxisLimit; }
             if (!DA.GetDataList(3, additionalBaseMeshes)) { additionalBaseMeshes = new List<Mesh>() { }; }
             if (!DA.GetDataList(4, additionalLinkMeshes)) { additionalLinkMeshes = new List<Mesh>() { }; }
 

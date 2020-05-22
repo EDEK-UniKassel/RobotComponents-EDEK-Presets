@@ -79,10 +79,10 @@ namespace RobotComponentsEDEK.Components.ExternalAxes
             Interval axisLimit = new Interval();
             Vector3d axis = new Vector3d();
 
-            if (!DA.GetData(0, ref name)) { name = "M8DM1"; }
-            if (!DA.GetData(1, ref axisPlane)) { axisPlane = new Plane(new Point3d(-1528, 4940, 2614), new Vector3d(0, -1, 0), new Vector3d(-1, 0, 0)); }
-            if (!DA.GetData(2, ref axis)) { axis = new Vector3d(1, 0, 0); }
-            if (!DA.GetData(3, ref axisLimit)) { axisLimit = new Interval(0, 9660); }
+            if (!DA.GetData(0, ref name)) { name = EDEK_GUDEL_Track.Name; }
+            if (!DA.GetData(1, ref axisPlane)) { axisPlane = EDEK_GUDEL_Track.AxisPlane; }
+            if (!DA.GetData(2, ref axis)) { axis = EDEK_GUDEL_Track.Axis; }
+            if (!DA.GetData(3, ref axisLimit)) { axisLimit = EDEK_GUDEL_Track.AxisLimit; }
 
             ExternalLinearAxis externalLinearAxis = new ExternalLinearAxis();
 
