@@ -76,7 +76,7 @@ namespace RobotComponentsEDEK.Components.Robots
             RobotTool tool = null;
             List<ExternalAxis> externalAxis = new List<ExternalAxis>();
 
-            if (!DA.GetData(0, ref positionPlane)) { positionPlane = new Plane(new Point3d(0, 0, 247), new Vector3d(1, 0, 0), new Vector3d(0, 1, 0)); }
+            if (!DA.GetData(0, ref positionPlane)) { positionPlane = Plane.WorldXY; }
             if (!DA.GetData(1, ref tool)) { tool = new RobotTool(); }
             if (!DA.GetDataList(2, externalAxis)) { externalAxis = new List<ExternalAxis>() { }; }
 

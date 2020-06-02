@@ -92,7 +92,7 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
         /// </summary>
         public static Plane AxisPlane
         {
-            get { return new Plane(new Point3d(-1528, 4940, 2614), new Vector3d(0, -1, 0), new Vector3d(-1, 0, 0)); }
+            get { return new Plane(new Point3d(0.0, 0.0, 2565), new Vector3d(0, 1, 0), new Vector3d(1, 0, 0)); }
         }
 
         /// <summary>
@@ -100,7 +100,7 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
         /// </summary>
         public static Interval AxisLimit
         {
-            get { return new Interval(0, 9660); }
+            get { return new Interval(-5, 9620); }
         }
     }
 }
