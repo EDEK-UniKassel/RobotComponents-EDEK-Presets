@@ -4,11 +4,11 @@
     {
         /// <summary>
         /// Returns the Current Version of the RobotComponent EDEK Presets Plugin. Has to be manually updated each time
-        /// 0.XX.XXX ---> mature release
-        /// X.00.XXX ---> minor release(for example new functions new components...etc.)
-        /// X.XX.000 ---> Bug fixes small improvements
+        /// 0000.XX.XX ---> year of release (e.g. 2020)
+        /// XXXX.00.XX ---> month of release (e.g. 06)
+        /// XXXX.XX.00 ---> day of release (e.g. 02)
         /// </summary>
-        public static readonly string CurrentVersion = "0.01.000";
+        public static readonly string CurrentVersion = "2020.06.04";
     }
 
 }
