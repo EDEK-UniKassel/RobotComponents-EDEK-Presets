@@ -6,9 +6,9 @@ The position data of the external axes and the robots have to match with the dat
 
 Wants connected to a virtual or physical controller you can look up the robot and external axis positions as follows in Robot Studio:
 
-- Robot positions: Go to the tab `Controller`. Select in the left menu the tab `Configuration`. Go to `Motion`. From the `Type` list you have to select `Robot`. Here you can look up the position data of the robot(s). Check [this figure](https://github.com/EDEK-UniKassel/RobotComponents-EDEK-Presets/blob/master/Utility/Figures/Robot_studio_robot_position.png) for a visual explanation. 
+- Robot positions: Go to the tab `Controller`. Select in the left menu the tab `Configuration`. Go to `Motion`. From the `Type` list you have to select `Robot`. Here you can look up the position data of the robot(s). Check [this figure](Utility/Figures/Robot_studio_robot_position.png) for a visual explanation. 
 
-- External axis positions: Go to the tab `Controller`. Select in the left menu the tab `Configuration`. Go to `Motion`. From the Type list you have to select `Single`. Here you can look up the position data of the external axes. Check [this figure](https://github.com/EDEK-UniKassel/RobotComponents-EDEK-Presets/blob/master/Utility/Figures/Robot_studio_external_axis_position.png) for a visual explanation.
+- External axis positions: Go to the tab `Controller`. Select in the left menu the tab `Configuration`. Go to `Motion`. From the Type list you have to select `Single`. Here you can look up the position data of the external axes. Check [this figure](Utility/Figures/Robot_studio_external_axis_position.png) for a visual explanation.
 
 The position and its orientation are given as coordinates (`Base Frame x`, `Base Frame y` and `Base Frame z`) and quaternion values (`Base Frame q1`, `Base Frame q2`, `Base Frame q3`, `Base Frame q4`).  In grasshopper these values can be converted to a plane by using the [Quaternion to Plane](https://edek-unikassel.github.io/RobotComponents-Documentation/docs/Robot%20Components/Utility/Quaternion%20to%20Plane/) component. A simple example is given below.
 
