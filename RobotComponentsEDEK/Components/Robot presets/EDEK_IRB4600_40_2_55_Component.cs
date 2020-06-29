@@ -8,7 +8,7 @@ using Rhino.Geometry;
 // RobotComponents Libs
 using RobotComponents.BaseClasses.Definitions;
 using RobotComponentsABB.Parameters.Definitions;
-using RobotComponentsEDEK.Presets.Robot;
+using RobotComponentsEDEK.Presets.Robots;
 
 namespace RobotComponentsEDEK.Components.Robots
 {
@@ -22,9 +22,9 @@ namespace RobotComponentsEDEK.Components.Robots
         /// </summary>
         public EDEK_IRB4600_40_2_55_Component()
           : base("IRB4600-40/2.55", "IRB4600",
-              "An ABB IRB4600-40/2.55 Info preset component."
+              "An ABB IRB4600-40/2.55 preset component."
                 + System.Environment.NewLine +
-                "RobotComponents EDEK Presets : v" + RobotComponentsEDEK.Utils.VersionNumbering.CurrentVersion,
+                "Robot Components EDEK Presets : v" + RobotComponentsEDEK.Utils.VersionNumbering.CurrentVersion,
               "RobotComponents", "EDEK Presets")
         {
         }
@@ -62,7 +62,7 @@ namespace RobotComponentsEDEK.Components.Robots
         /// </summary>
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
-            pManager.RegisterParam(new RobotInfoParameter(), "Robot Info", "RI", "Resulting Robot Info", GH_ParamAccess.item); 
+            pManager.RegisterParam(new RobotParameter(), "Robot", "R", "Resulting Robot", GH_ParamAccess.item); 
         }
 
         /// <summary>
@@ -80,18 +80,18 @@ namespace RobotComponentsEDEK.Components.Robots
             if (!DA.GetDataList(2, externalAxis)) { externalAxis = new List<ExternalAxis>() { }; }
 
             string name = "IRB4600-40/2.55";
-            RobotInfo robotInfo = new RobotInfo();
+            Robot robot = new Robot();
 
             try
             {
-                robotInfo = EDEK_IRB4600_40_255.GetRobotInfo(name, positionPlane, tool, externalAxis);
+                robot = EDEK_IRB4600_40_255.GetRobot(name, positionPlane, tool, externalAxis);
             }
             catch (Exception ex)
             {
                 AddRuntimeMessage(GH_RuntimeMessageLevel.Error, ex.Message);
             }
 
-            DA.SetData(0, robotInfo);
+            DA.SetData(0, robot);
         }
 
         /// <summary>

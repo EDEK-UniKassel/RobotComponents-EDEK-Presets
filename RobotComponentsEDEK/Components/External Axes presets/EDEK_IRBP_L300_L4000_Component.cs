@@ -24,7 +24,7 @@ namespace RobotComponentsEDEK.Components.ExternalAxes
           : base("IRBP-L300-L4000", "IRBP-L300-L4000",
               "An ABB IRBP-L300-L4000 External Rotational Axis preset component."
                 + System.Environment.NewLine +
-                "RobotComponents EDEK Presets : v" + RobotComponentsEDEK.Utils.VersionNumbering.CurrentVersion,
+                "Robot Components EDEK Presets : v" + RobotComponentsEDEK.Utils.VersionNumbering.CurrentVersion,
               "RobotComponents", "EDEK Presets")
         {
         }

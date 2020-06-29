@@ -7,7 +7,7 @@ using Rhino.Geometry;
 using RobotComponents.BaseClasses.Definitions;
 using RobotComponents.Utils;
 
-namespace RobotComponentsEDEK.Presets.Robot
+namespace RobotComponentsEDEK.Presets.Robots
 {
     /// <summary>
     /// Defines the IRB4600-40/2.55 with a base platform
@@ -15,14 +15,14 @@ namespace RobotComponentsEDEK.Presets.Robot
     public static class EDEK_IRB4600_40_255_Platform
     {
         /// <summary>
-        /// Defines the IRB4600-40/2.55 Robot Info with a base platform
+        /// Defines the IRB4600-40/2.55 Robot with a base platform
         /// </summary>
-        /// <param name="name"> The name of the Robot Info. </param>
+        /// <param name="name"> The name of the Robot. </param>
         /// <param name="positionPlane"> The position of the robot in world coordinate space as plane. </param>
         /// <param name="tool"> The robot end-effector as a Robot Tool. </param>
         /// <param name="externalAxis"> The external axes attaced to the robot as list with External Axes. </param>
-        /// <returns> Returns the Robot Info preset. </returns>
-        public static RobotInfo GetRobotInfo(string name, Plane positionPlane, RobotTool tool, List<ExternalAxis> externalAxis = null)
+        /// <returns> Returns the Robot preset. </returns>
+        public static Robot GetRobot(string name, Plane positionPlane, RobotTool tool, List<ExternalAxis> externalAxis = null)
         {
             List<Mesh> meshes = GetMeshes();
             List<Plane> axisPlanes = GetAxisPlanes();
@@ -39,11 +39,11 @@ namespace RobotComponentsEDEK.Presets.Robot
                 }
             }
 
-            RobotInfo robotInfo = new RobotInfo(name, meshes, axisPlanes, axisLimits, Plane.WorldXY, mountingFrame, tool, externalAxis);
+            Robot robot = new Robot(name, meshes, axisPlanes, axisLimits, Plane.WorldXY, mountingFrame, tool, externalAxis);
             Transform trans = Transform.PlaneToPlane(Plane.WorldXY, positionPlane);
-            robotInfo.Transfom(trans);
+            robot.Transfom(trans);
 
-            return robotInfo;
+            return robot;
         }
 
         /// <summary>

@@ -24,7 +24,7 @@ namespace RobotComponentsEDEK.Components.ExternalAxes
           : base("IGUS Positioner", "IGUS Pos",
               "An EDEK IGUS Positioner (External Rotational Axis) preset component."
                 + System.Environment.NewLine +
-                "RobotComponents EDEK Presets : v" + RobotComponentsEDEK.Utils.VersionNumbering.CurrentVersion,
+                "Robot Components EDEK Presets : v" + RobotComponentsEDEK.Utils.VersionNumbering.CurrentVersion,
               "RobotComponents", "EDEK Presets")
         {
         }
