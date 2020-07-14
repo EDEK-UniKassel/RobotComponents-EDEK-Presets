@@ -2,5 +2,5 @@
 
 ## Contributors
 
-- Arjen Deetman <<deetman@uni-kassel.de>> [@arjendeetman](https://github.com/arjendeetman)
-- Andrea Rossi <<rossi@uni-kassel.de>> [@ar0551](https://github.com/ar0551)
+- [Arjen Deetman](https://github.com/arjendeetman) [[EDEK Uni Kassel](http://edek.uni-kassel.de/)]
+- [Andrea Rossi](https://github.com/ar0551) [[EDEK Uni Kassel](http://edek.uni-kassel.de/)] <<rossi@uni-kassel.de>>
