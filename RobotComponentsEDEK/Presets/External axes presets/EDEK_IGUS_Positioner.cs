@@ -3,7 +3,7 @@ using System.Collections.Generic;
 // Rhino Libs
 using Rhino.Geometry;
 // Robot Components Libs
-using RobotComponents.BaseClasses.Definitions;
+using RobotComponents.Definitions;
 using RobotComponents.Utils;
 
 namespace RobotComponentsEDEK.Presets.ExternalAxes
