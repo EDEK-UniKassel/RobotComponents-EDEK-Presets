@@ -8,7 +8,7 @@
         /// XXXX.00.XX ---> month of release (e.g. 06)
         /// XXXX.XX.00 ---> day of release (e.g. 02)
         /// </summary>
-        public const string CurrentVersion = "2020.07.14";
+        public const string CurrentVersion = "2020.07.30";
     }
 
 }
