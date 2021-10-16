@@ -64,7 +64,7 @@ namespace RobotComponentsEDEK.Gh.Components.ExternalAxes
         /// </summary>
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
-            pManager.RegisterParam(new ExternalLinearAxisParameter(), "External Linear Axis", "ELA", "Resulting External Linear Axis", GH_ParamAccess.item);
+            pManager.RegisterParam(new Param_ExternalLinearAxis(), "External Linear Axis", "ELA", "Resulting External Linear Axis", GH_ParamAccess.item);
         }
 
         /// <summary>

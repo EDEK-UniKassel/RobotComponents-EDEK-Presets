@@ -32,9 +32,9 @@ namespace RobotComponentsEDEK.Presets.Robots
             // Override position plane when an external linear axis is coupled
             for (int i = 0; i < externalAxis.Count; i++)
             {
-                if (externalAxis[i] is ExternalLinearAxis)
+                if (externalAxis[i].MovesRobot == true)
                 {
-                    positionPlane = (externalAxis[i] as ExternalLinearAxis).AttachmentPlane;
+                    positionPlane = externalAxis[i].AttachmentPlane;
                     break;
                 }
             }

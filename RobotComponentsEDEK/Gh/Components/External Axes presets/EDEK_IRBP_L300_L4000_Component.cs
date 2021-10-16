@@ -67,7 +67,7 @@ namespace RobotComponentsEDEK.Gh.Components.ExternalAxes
         /// </summary>
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
-            pManager.RegisterParam(new ExternalRotationalAxisParameter(), "External Rotational Axis", "ERA", "Resulting External Rotational Axis", GH_ParamAccess.item);
+            pManager.RegisterParam(new Param_ExternalRotationalAxis(), "External Rotational Axis", "ERA", "Resulting External Rotational Axis", GH_ParamAccess.item);
         }
 
         /// <summary>
