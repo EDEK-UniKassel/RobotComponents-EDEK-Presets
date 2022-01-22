@@ -20,26 +20,32 @@ namespace RobotComponentsEDEK.Presets.Robots
         /// <param name="name"> The name of the Robot. </param>
         /// <param name="positionPlane"> The position of the robot in world coordinate space as plane. </param>
         /// <param name="tool"> The robot end-effector as a Robot Tool. </param>
-        /// <param name="externalAxis"> The external axes attaced to the robot as list with External Axes. </param>
+        /// <param name="externalAxes"> The external axes attaced to the robot as list with External Axes. </param>
         /// <returns> Returns the Robot preset. </returns>
-        public static Robot GetRobot(string name, Plane positionPlane, RobotTool tool, List<ExternalAxis> externalAxis = null)
+        public static Robot GetRobot(string name, Plane positionPlane, RobotTool tool, IList<ExternalAxis> externalAxes = null)
         {
             List<Mesh> meshes = GetMeshes();
             List<Plane> axisPlanes = GetAxisPlanes();
             List<Interval> axisLimits = GetAxisLimits();
             Plane mountingFrame = GetToolMountingFrame();
 
-            // Override position plane when an external linear axis is coupled
-            for (int i = 0; i < externalAxis.Count; i++)
+            // Make empty list with external axes if the value is null
+            if (externalAxes == null)
             {
-                if (externalAxis[i].MovesRobot == true)
+                externalAxes = new List<ExternalAxis>() { };
+            }
+
+            // Override position plane when an external linear axis is coupled
+            for (int i = 0; i < externalAxes.Count; i++)
+            {
+                if (externalAxes[i].MovesRobot == true)
                 {
-                    positionPlane = externalAxis[i].AttachmentPlane;
+                    positionPlane = externalAxes[i].AttachmentPlane;
                     break;
                 }
             }
 
-            Robot robot = new Robot(name, meshes, axisPlanes, axisLimits, Plane.WorldXY, mountingFrame, tool, externalAxis);
+            Robot robot = new Robot(name, meshes, axisPlanes, axisLimits, Plane.WorldXY, mountingFrame, tool, externalAxes);
             Transform trans = Transform.PlaneToPlane(Plane.WorldXY, positionPlane);
             robot.Transfom(trans);
 

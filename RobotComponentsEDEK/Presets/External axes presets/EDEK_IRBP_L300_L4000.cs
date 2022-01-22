@@ -51,7 +51,7 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
         /// <param name="additionalBaseMeshes"> Additional mesh for base as a list with meshes. </param>
         /// <param name="additionalLinkMeshes"> Additional mesh for link as a list with meshes. </param>
         /// <returns> Returns the external rotational axis preset. </returns>
-        public static ExternalRotationalAxis GetExternalRotationalAxis(List<Mesh> additionalBaseMeshes = null, List<Mesh> additionalLinkMeshes = null)
+        public static ExternalRotationalAxis GetExternalRotationalAxis(IList<Mesh> additionalBaseMeshes = null, IList<Mesh> additionalLinkMeshes = null)
         {
             Mesh additionalBaseMesh = new Mesh();
             Mesh additionalLinkMesh = new Mesh();
@@ -116,7 +116,7 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
         /// <param name="additionalBaseMeshes"> Additional mesh for base as a list with meshes. </param>
         /// <param name="additionalLinkMeshes"> Additional mesh for link as a list with meshes. </param>
         /// <returns> Returns the external rotational axis preset. </returns>
-        public static ExternalRotationalAxis GetExternalRotationalAxis(string name, Plane positionPlane, Interval axisLimit = new Interval(), List<Mesh> additionalBaseMeshes = null, List < Mesh> additionalLinkMeshes = null)
+        public static ExternalRotationalAxis GetExternalRotationalAxis(string name, Plane positionPlane, Interval axisLimit = new Interval(), IList<Mesh> additionalBaseMeshes = null, IList<Mesh> additionalLinkMeshes = null)
         {
             Mesh additionalBaseMesh = new Mesh();
             Mesh additionalLinkMesh = new Mesh();
