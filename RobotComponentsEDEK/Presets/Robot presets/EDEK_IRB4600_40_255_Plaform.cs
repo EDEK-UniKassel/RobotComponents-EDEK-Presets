@@ -47,7 +47,7 @@ namespace RobotComponentsEDEK.Presets.Robots
 
             Robot robot = new Robot(name, meshes, axisPlanes, axisLimits, Plane.WorldXY, mountingFrame, tool, externalAxes);
             Transform trans = Transform.PlaneToPlane(Plane.WorldXY, positionPlane);
-            robot.Transfom(trans);
+            robot.Transform(trans);
 
             return robot;
         }
