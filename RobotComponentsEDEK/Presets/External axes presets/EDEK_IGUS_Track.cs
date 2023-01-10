@@ -3,7 +3,7 @@ using System.Collections.Generic;
 // Rhino Libs
 using Rhino.Geometry;
 // Robot Components Libs
-using RobotComponents.Definitions;
+using RobotComponents.ABB.Definitions;
 using RobotComponents.Utils;
 
 namespace RobotComponentsEDEK.Presets.ExternalAxes
@@ -62,10 +62,10 @@ namespace RobotComponentsEDEK.Presets.ExternalAxes
 
             // Base
             linkString = RobotComponentsEDEK.Properties.Resources.IGUS_track_link_0;
-            meshes.Add((Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
+            meshes.Add((Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
             // Axis 1
             linkString = RobotComponentsEDEK.Properties.Resources.IGUS_track_link_1;
-            meshes.Add((Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
+            meshes.Add((Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
 
             return meshes;
         }

@@ -55,13 +55,18 @@
     </Reference>
     <Reference Include="RobotComponents">
       <HintPath>..\DLLs\RobotComponents.dll</HintPath>
-      <Private>False</Private>
     </Reference>
-    <Reference Include="RobotComponents.Gh">
-      <HintPath>..\DLLs\RobotComponents.Gh.dll</HintPath>
+    <Reference Include="RobotComponents.ABB">
+      <HintPath>..\DLLs\RobotComponents.ABB.dll</HintPath>
     </Reference>
-    <Reference Include="RobotComponents.Gh.Goos">
-      <HintPath>..\DLLs\RobotComponents.Gh.Goos.dll</HintPath>
+    <Reference Include="RobotComponents.ABB.Controllers">
+      <HintPath>..\DLLs\RobotComponents.ABB.Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="RobotComponents.ABB.Gh">
+      <HintPath>..\DLLs\RobotComponents.ABB.Gh.dll</HintPath>
+    </Reference>
+    <Reference Include="RobotComponents.ABB.Gh.Goos">
+      <HintPath>..\DLLs\RobotComponents.ABB.Gh.Goos.dll</HintPath>
     </Reference>
     <Reference Include="RobotStudio.Services.RobApi">
       <HintPath>..\DLLs\RobotStudio.Services.RobApi.dll</HintPath>

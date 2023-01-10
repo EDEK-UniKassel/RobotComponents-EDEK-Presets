@@ -5,8 +5,8 @@ using Grasshopper.Kernel;
 // Rhino Libs
 using Rhino.Geometry;
 // RobotComponents Libs
-using RobotComponents.Definitions;
-using RobotComponents.Gh.Parameters.Definitions;
+using RobotComponents.ABB.Definitions;
+using RobotComponents.ABB.Gh.Parameters.Definitions;
 using RobotComponentsEDEK.Presets.ExternalAxes;
 
 namespace RobotComponentsEDEK.Gh.Components.ExternalAxes
@@ -24,7 +24,7 @@ namespace RobotComponentsEDEK.Gh.Components.ExternalAxes
               "The EDEK IGUS Track External Linear Axis preset component."
                 + System.Environment.NewLine +
                 "Robot Components EDEK Presets : v" + RobotComponentsEDEK.Utils.VersionNumbering.CurrentVersion,
-              "RobotComponents", "EDEK Presets")
+              "Robot Components ABB", "EDEK Presets")
         {
         }
 

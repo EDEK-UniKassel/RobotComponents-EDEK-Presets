@@ -6,8 +6,8 @@ using Grasshopper.Kernel;
 // Rhino Libs
 using Rhino.Geometry;
 // RobotComponents Libs
-using RobotComponents.Definitions;
-using RobotComponents.Gh.Parameters.Definitions;
+using RobotComponents.ABB.Definitions;
+using RobotComponents.ABB.Gh.Parameters.Definitions;
 using RobotComponentsEDEK.Presets.Robots;
 
 namespace RobotComponentsEDEK.Gh.Components.Robots
@@ -25,7 +25,7 @@ namespace RobotComponentsEDEK.Gh.Components.Robots
               "An ABB IRB 1200-5/0.9 Robot preset component."
                 + System.Environment.NewLine +
                 "Robot Components EDEK Presets : v" + RobotComponentsEDEK.Utils.VersionNumbering.CurrentVersion,
-              "RobotComponents", "EDEK Presets")
+              "Robot Components ABB", "EDEK Presets")
         {
         }
 

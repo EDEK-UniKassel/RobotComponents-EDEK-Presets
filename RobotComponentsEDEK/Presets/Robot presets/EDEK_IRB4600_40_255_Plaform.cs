@@ -4,7 +4,7 @@ using System.Collections.Generic;
 // Rhino Libs
 using Rhino.Geometry;
 // Robot Components Libs
-using RobotComponents.Definitions;
+using RobotComponents.ABB.Definitions;
 using RobotComponents.Utils;
 
 namespace RobotComponentsEDEK.Presets.Robots
@@ -63,28 +63,28 @@ namespace RobotComponentsEDEK.Presets.Robots
 
             // Base + platform
             linkString = RobotComponentsEDEK.Properties.Resources.IRB4600_40_2_55_platform;
-            Mesh baseMesh = (Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString));
+            Mesh baseMesh = (Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString));
             linkString = RobotComponentsEDEK.Properties.Resources.IRB4600_40_2_55_link_0;
-            baseMesh.Append((Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
+            baseMesh.Append((Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
             meshes.Add(baseMesh);
             // Axis 1
             linkString = RobotComponentsEDEK.Properties.Resources.IRB4600_40_2_55_link_1;
-            meshes.Add((Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
+            meshes.Add((Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
             // Axis 2
             linkString = RobotComponentsEDEK.Properties.Resources.IRB4600_40_2_55_link_2;
-            meshes.Add((Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
+            meshes.Add((Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
             // Axis 3
             linkString = RobotComponentsEDEK.Properties.Resources.IRB4600_40_2_55_link_3;
-            meshes.Add((Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
+            meshes.Add((Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
             // Axis 4
             linkString = RobotComponentsEDEK.Properties.Resources.IRB4600_40_2_55_link_4;
-            meshes.Add((Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
+            meshes.Add((Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
             // Axis 5
             linkString = RobotComponentsEDEK.Properties.Resources.IRB4600_40_2_55_link_5;
-            meshes.Add((Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
+            meshes.Add((Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
             // Axis 6
             linkString = RobotComponentsEDEK.Properties.Resources.IRB4600_40_2_55_link_6;
-            meshes.Add((Mesh)HelperMethods.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
+            meshes.Add((Mesh)Serialization.ByteArrayToObject(System.Convert.FromBase64String(linkString)));
 
             return meshes;
         }
